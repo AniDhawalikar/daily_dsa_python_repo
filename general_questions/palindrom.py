@@ -13,7 +13,9 @@ def check_palindrome(s):
     while i < j:
         if s[i] != s[j]:
             return False
-        return True
+        i += 1
+        j -= 1
+    return True
     
-n = "121"
+n = "abaa"
 print(check_palindrome(n))
